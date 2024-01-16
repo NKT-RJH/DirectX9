@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{204e4a31-7c46-41c0-8c33-a4583f3dc0e4}</ProjectGuid>
-    <RootNamespace>Start</RootNamespace>
+    <ProjectGuid>{8bef5541-e0ca-410b-a9e4-2a408a60c36a}</ProjectGuid>
+    <RootNamespace>Desktop</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>DirectX9</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -133,20 +132,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CD3DApp.h" />
+    <ClInclude Include="CGameEdu01.h" />
+    <ClInclude Include="Desktop.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Resource.h" />
-    <ClInclude Include="Start.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Start.cpp" />
+    <ClCompile Include="CD3DApp.cpp" />
+    <ClCompile Include="CGameEdu01.cpp" />
+    <ClCompile Include="Desktop.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="Start.rc" />
+    <ResourceCompile Include="Desktop.rc" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Desktop.ico" />
     <Image Include="small.ico" />
-    <Image Include="Start.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
